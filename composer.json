@@ -1,0 +1,34 @@
+{
+  "name": "nysschens/tradeapp-api-client",
+  "description": "PHP Guzzle API Client for Trade Platforms",
+  "type": "library",
+  "keywords": ["TradeApp", "api", "Binary Options","Fx Trade","CFD Trade"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Desmond Nysschens",
+      "email": "nysschens@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.2",
+    "guzzlehttp/guzzle": "~7.0",
+    "psr/log": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.1",
+    "fzaninotto/faker": "~1.4",
+    "monolog/monolog": "^1.18"
+  },
+  "autoload": {
+    "psr-4": {
+      "nysschens\\TradeApp\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "nysschens\\TradeApp\\Tests\\": "tests"
+    }
+  }
+}
