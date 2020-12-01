@@ -1,9 +1,9 @@
 TradeApp API Client
 ====
 
-A skeleton repo for the PHP Guzzle API Client for trading platforms.
+A skeleton repo of a PHP Guzzle API Client for Laravel to consume trading platform data.
 
-TradeApp is independent API client usong Guzzle intended for trading platforms.
+TradeApp is an independent API client using Guzzle 7, intended for consuming data from various Global Trading Platforms.
 
 
 ## Installation
@@ -15,7 +15,8 @@ $ composer require nysschens/tradeapp-api-client
 
 ## Usage
 
-First, we need to create a client object to connect to the trading platform servers. You will need to acquire an API username and password for the app from a broker, then pass the credentials into the client object for logging in, like this.
+First, you'll need to create a client object to connect to the trading platform servers with. 
+You will need an API username and password from whatever trade platform you subscribe to. Ask your broker for that info. Then pass those credentials into the client object for logging in, like this.
 
 ```php
 $client = new \TradeApp\ApiClient("https://<username>:<password>@<hostname>");
